@@ -61,7 +61,7 @@
                         bindings = <
    &hto QWERTY Q  &kp W             &kp       F   &kp P            &kp B             &kp J           &kp        L    &kp       U       &kp        Y      &hto GAME      SQT
    &mt_ LALT   A  &mt_ LCTRL R      &mt_ LGUI S   &mt_ LSHFT T     &kp G             &kp M           &mt_ LSHFT N    &mt_ LGUI E       &mt_ LCTRL I      &mt_ LALT      O
-   &kp         Z  &kp X             &kp       C   &kp D            &kp V             &kp K           &kp        H    &kp       COMMA   &kp        DOT    &mt_ MICROSOFT FSLH
+   &kp         Z  &kp X             &kp       C   &kp D            &kp V             &kp K           &kp        H    &kp       COMMA   &kp        DOT    &hto MICROSOFT FSLH
                                     &lt MED   ESC &lt MUS TAB      &lt NAV    SPACE  &lt NUM    RET  &lt SYM BKSP &lt FUN DEL
                         >;
                 };
