@@ -51,20 +51,6 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                COLEMAK {
-                        display-name = "COLEMAK";
-// -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ' 
-// |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O 
-// |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  / 
-//             | ESC | SPC | TAB |   | BCK | RET  | DEL |
-                        bindings = <
-   &hto QWERTY Q  &kp W             &kp       F   &kp P            &kp B             &kp J           &kp        L    &kp       U       &kp        Y      &hto GAME      SQT
-   &mt_ LALT   A  &mt_ LCTRL R      &mt_ LGUI S   &mt_ LSHFT T     &kp G             &kp M           &mt_ LSHFT N    &mt_ LGUI E       &mt_ LCTRL I      &mt_ LALT      O
-   &kp         Z  &kp X             &kp       C   &kp D            &kp V             &kp K           &kp        H    &kp       COMMA   &kp        DOT    &hto MICROSOFT FSLH
-                                    &lt MED   ESC &lt MUS TAB      &lt NAV    SPACE  &lt NUM    RET  &lt SYM BKSP &lt FUN DEL
-                        >;
-                };
 
                 QWERTY {
                        display-name = "QWERTY";
@@ -80,6 +66,22 @@
                                         &lt MED ESC &lt MUS TAB&lt NAV SPACE    &lt NUM RET &lt SYM BKSP &lt FUN DEL
                         >;
                 };
+                
+                COLEMAK {
+                        display-name = "COLEMAK";
+// -----------------------------------------------------------------------------------------
+// |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ' 
+// |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O 
+// |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  / 
+//             | ESC | SPC | TAB |   | BCK | RET  | DEL |
+                        bindings = <
+   &hto QWERTY Q  &kp W             &kp       F   &kp P            &kp B             &kp J           &kp        L    &kp       U       &kp        Y      &hto GAME      SQT
+   &mt_ LALT   A  &mt_ LCTRL R      &mt_ LGUI S   &mt_ LSHFT T     &kp G             &kp M           &mt_ LSHFT N    &mt_ LGUI E       &mt_ LCTRL I      &mt_ LALT      O
+   &kp         Z  &kp X             &kp       C   &kp D            &kp V             &kp K           &kp        H    &kp       COMMA   &kp        DOT    &hto MICROSOFT FSLH
+                                    &lt MED   ESC &lt MUS TAB      &lt NAV    SPACE  &lt NUM    RET  &lt SYM BKSP &lt FUN DEL
+                        >;
+                };
+                
                 SYM {
                     display-name = "SYM";
 // -----------------------------------------------------------------------------------------
@@ -123,7 +125,7 @@
                         >;
                 };
                 MUS {
-                    display-name = "MEDIA";
+                    display-name = "DIR";
 // -----------------------------------------------------------------------------------------
 // |     |     |     |      |      |     | |     | |      |      |      |     |      |      |
 // |     | ALT | CTR | META | SHFT |     | |     | | ML   | MD   | MU   | MR  |      |      |
